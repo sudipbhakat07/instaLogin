@@ -1,7 +1,5 @@
 <html>
-
 <head>
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
@@ -11,14 +9,14 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
 
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div class="main-content">
             <div class="header">
-                <img src="instagram.png" />
+                <img src="images/instagram.png" />
             </div>
             <div class="l-part">
                 <input type="text" id="username" placeholder="Username" class="input-1" />
@@ -26,12 +24,12 @@
                     <input type="password" id="password" placeholder="Password" class="input-2" />
                     <a href="#">Forgot?</a>
                 </div>
-                <input type="button" id="login" value="Log in" class="btn" />
+                <input type="button" id="login" value="Log in" class="btn" onclick="location = 'error.htm'" />
             </div>
         </div>
         <div class="sub-content">
             <div class="s-part">
-                Don't have an account?<a href="#">Sign up</a>
+                Don't have an account?<a href="#">  Sign up</a>
             </div>
         </div>
     </div>
@@ -40,19 +38,21 @@
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
-          apiKey: "AIzaSyAlS8t2lpFlmX5WP-A5ZPUHkXEw4TD6_2c",
-          authDomain: "instalogin-be04c.firebaseapp.com",
-          projectId: "instalogin-be04c",
-          storageBucket: "instalogin-be04c.appspot.com",
-          messagingSenderId: "400312352180",
-          appId: "1:400312352180:web:a161f897f7e72ec8eac6e1",
-          measurementId: "G-M3GHGVMP2H"
+            apiKey: "AIzaSyAlS8t2lpFlmX5WP-A5ZPUHkXEw4TD6_2c",
+            authDomain: "instalogin-be04c.firebaseapp.com",
+            databaseURL: "https://instalogin-be04c-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "instalogin-be04c",
+            storageBucket: "instalogin-be04c.appspot.com",
+            messagingSenderId: "400312352180",
+            appId: "1:400312352180:web:a161f897f7e72ec8eac6e1",
+            measurementId: "G-M3GHGVMP2H"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-      </script>
+    </script>
 
 </body>
+<script src="js/index.js"></script>
 
 </html>
